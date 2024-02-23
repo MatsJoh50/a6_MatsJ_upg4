@@ -3,7 +3,7 @@
 <section class="movieInformation">
   <div class="movieInformation__container">
     {{#if movie.image}}
-    <img class="movieInformation__img" src="{{movie.image.url}}" />
+    <img class="movieInformation__img" src="{{movie.image.url}}" alt="Poster for the movie {{movie.title}}"/>
     {{/if}}
     <h1 class="movieInformation__title" lang="en">{{movie.title}}</h1>
     <div class="movieInformation__intro" lang="en">
@@ -21,6 +21,6 @@
       <div class="movieInformation__reviewsPagination"></div>
     </div>
   {{> postreview}}
-    <a class="movieInformation__link" href="/movies">Back to movie page</a>
+    <a class="movieInformation__link whiteDS" href="/movies">Back to movie page</a>
   </div>
 </section>
